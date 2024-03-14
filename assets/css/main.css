@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 550px;
+    height: 650px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+}
+
+.header_top_content {
+    width: 100%;
+    height: 150px;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.input_div {
+    width: 100%;
+    height: 35px;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: green;
+    padding: 0px 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.bi-x {
+    font-size: 20px;
+    color: red;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.form_btn {
+    width: 120px;
+    height: 35px;
+    background-color: green;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: .5s;
+}
+
+.form_btn:hover {
+    color: green;
+    background-color: white;
+    border-color: green;
+    transition: .5s;
+}
+
+.all_delete_btn {
+    margin-top: 40px;
+    width: 100px;
+    height: 35px;
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+    border: 1px solid transparent;
+}
+
+.all_delete_btn:hover {
+    color: red;
+    background-color: white;
+    border-color: red;
+    transition: .5s;
+}
+
+.task {
+    width: 100%;
+    height: 460px;
+    overflow: auto;
+}
+
+.task_name {
+    color: green;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.btn_group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task_card {
+    width: 100%;
+    height: 150px;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    margin-top: 20px;
+    animation: bounce 0.5s;
+}
+
+.btn_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-left: -30px;
+}
+
+.comp_btn {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(110, 179, 6);
+    border-radius: 10px;
+}
+
+.comp_btn {
+    width: 80px;
+    height: 50px;
+    border: 1px solid rgb(110, 179, 6);
+    cursor: pointer;
+    color: white;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.edit_btn {
+    width: 50px;
+    height: 50px;
+    background-color: #f2f20a;
+    border-radius: 10px;
+}
+
+.edit_btn {
+    width: 80px;
+    height: 50px;
+    border: 1px solid #f2f20a;
+    cursor: pointer;
+    color: white;
+    margin-top: 25px;
+}
+
+.soat_btn {
+    width: 50px;
+    height: 50px;
+    background-color: dodgerblue;
+    border-radius: 10px;
+}
+
+.soat_btn {
+    width: 80px;
+    height: 50px;
+    border: 1px solid dodgerblue;
+    cursor: pointer;
+    color: white;
+    margin-top: 25px;
+}
+
+.daleti_btn {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.daleti_btn {
+    width: 80px;
+    height: 50px;
+    border: 1px solid red;
+    cursor: pointer;
+    color: white;
+    margin-top: 25px;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(0);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(0.8);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
